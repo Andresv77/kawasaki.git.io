@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #1a5c0a;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #1a5c0a;
+    border-radius: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #030303;
+    color: #a0ee74;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f7f7f7;
+}
+body{
+    background: rgb(247, 247, 247);
+    color: #030700;
+    font-family: 'DRagonlord';
+
+}
+ div {
+    position: relative;
+ }
+
+ video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 10px;
+
+ }
+ h1{
+    background: rgb(255, 247, 247);
+    font-size: 100px;
+    text-align: center;
+    font-weight: 100%;
+    mix-blend-mode: multiply;
+ }
+ .container h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body{
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+
+
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    perspective: 500px;
+}
+
+.logo{
+    width: 256px;
+    height: 198px;
+    background: url(logoformulario.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    
+    right: 700px;
+    filter: drop-shadow(0px 5px 10px #000000);
+    animation: rotar 7s linear infinite;
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+
+.bottom_part{
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    bottom: -94px;
+    background: #242424;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10px 10px #11111136;
+    transform: rotateX(90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom_part::before{
+    content: "";
+    width: 16rem;
+    height: 16rem;
+    position: absolute;
+    bottom: 5rem;
+    background: #0026ff;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10px 10px #11111136;
+    filter: blur(30px);
+    animation: Animate 1s linear infinite;
+}
+
+@keyframes Animate {
+    from{
+        width: 16rem;
+        height: 16rem;
+    }
+    50%{
+        width: 12rem;
+        height: 12rem;
+    }
+    to{
+        width: 16rem;
+        height: 16rem;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        background-size: cover; /* Cambia el tamaño de fondo para adaptarse mejor a dispositivos móviles */
+    }
+
+    .logo {
+        position: absolute;
+        top: 0px;
+        left: 200px;
+        height: 45px;
+        width: 20px;
+        background-size: cover; 
+        padding: 20px; /* Reduce el espacio interior del cuadro en dispositivos móviles */
+    }
+
+    h2 {
+        font-size: 20px; /* Reduce el tamaño del encabezado en dispositivos móviles */
+    }
+    
+    /* Otros ajustes necesarios para dispositivos móviles */
+}
